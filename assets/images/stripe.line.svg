@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bgmn {
+      background-size: auto auto;
+      background-color: rgba(228, 219, 187, 1);
+      fill: repeating-linear-gradient(40deg, transparent, transparent 9px, rgba(180, 18, 77, 1) 9px, rgba(180, 18, 77, 1) 18px), repeating-linear-gradient(45deg, transparent, transparent 9px, rgba(135, 105, 23, 1) 9px, rgba(135, 105, 23, 1) 18px);
+    }
+  </style>
+  <defs>
+
+    <pattern id="pattern" width="8" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45 50 50)">
+      <line stroke="#a6a6a6" stroke-width="7px" y2="10" />
+    </pattern>
+
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="25" fill="url(#pattern)" opacity="0.4" stroke="#a6a6a6" stroke-width="2px" />
+
+</svg>
+</svg>
