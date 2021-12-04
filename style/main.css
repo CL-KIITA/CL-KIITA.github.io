@@ -1,5 +1,4 @@
 :root {
-  --sideMenuWidth: 20vw;
   --sideMenuBorderWidth: 1vw;
   --borderStripeWidth: 0.5vw;
   --chetro-cherry: #fcd4d7;
@@ -43,6 +42,12 @@
   font-family: serif;
   --grad-bg: linear-gradient(-45deg, var(--green-green), var(--light-cream));
 }
+:root:not(.active){
+  --sideMenuWidth: 6vw;
+}
+:root.active{
+  --sideMenuWidth: 20vw;
+}
 body {
   height: 98vh;
   width: 98vw;
@@ -67,7 +72,9 @@ body {
 }
 .sideMenu{
   background-color: var(--cream);
+  transition: all .4s
 }
+
 .sideMenu .headerLogo {
   /* border: 1.5px solid var(--dark-cherry); */
   color: var(--claret);
@@ -111,6 +118,9 @@ body {
   font-size: 2.3em;
   line-height: 1.2em;
 }
+.sideMenu .headerLogo .headerName:not(.subEn):not(.subJa) {
+  display: inline-block;
+}
 .sideMenu .headerLogo .headerName.subEn {
   font-size: 1em;
   line-height: 1.2em;
@@ -132,12 +142,18 @@ body {
   left: 1.2em;
   bottom: 2em;
 }
+
+.menuTrigger a{
+ color: #fff;
+ text-decoration: none;
+}
+
 .sideMenu .sideNav ul li{
   border-bottom: 0.16em solid var(--green-green);
   background: var(--grad-2);
 }
 .sideMenu .sideNav ul li:link,
-.sideMenu .sideNav ul li:visited{
+:root.active .sideMenu .sideNav ul li:visited{
   background: var(--grad-2);
 }
 .sideMenu .sideNav ul li:hover,
@@ -154,6 +170,20 @@ body {
   margin-top: 0.3em;
   padding: 0;
   color: var(--claret);
+}
+.sideMenu .sideNav,
+.sideMenu .sideNav *{
+  transition: all .4s;
+}
+:root:not(.active) .sideMenu .headerName:not(.subEn):not(.subJa){
+  transform: rotate(-90deg) translateY(-1.3em) translateX(-1.8em);
+  width: 5.5em;
+}
+:root:not(.active) .sideMenu .sideNav,
+:root:not(.active) .sideMenu .sideNav *,
+:root:not(.active) .headerName.subEn,
+:root:not(.active) .headerName.subEn *{
+  display: none;
 }
 .main {
   width: calc(100vw - (var(--sideMenuWidth) + var(--sideMenuBorderWidth)));
@@ -237,3 +267,74 @@ body {
   height: 0.8vh;
   background: var(--grad-bg);
 }
+
+/* メイン - ハンバーガーメニュー */
+
+.menuTrigger,
+.menuTrigger span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+}
+.menuTrigger {
+  position: relative;
+  width: 5em;
+  height: 5em;
+  top: 1em;
+  left: 0.9em;
+  background: none;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+}
+:root:not(.active) .sideMenu .menuTrigger{
+  top: 20em;
+}
+.menuTrigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.3em;
+  background-color: var(--claret);
+  border-radius: 0.3em;
+}
+
+.menuTrigger span:nth-of-type(1) {
+  top:1em;	
+}
+.menuTrigger span:nth-of-type(2) {
+  top:1.9em;
+}
+
+.menuTrigger span:nth-of-type(3) {
+  top:2.8em;
+}
+:root:not(.active) .sideMenu .menuTrigger span{
+  transform: rotate(-10deg);
+}
+.menuTrigger::after{
+  position: relative;
+  color: var(--claret);
+  font-size: 1.2em;
+  top: 1.9em;
+  
+}
+:root:not(.active) .sideMenu .menuTrigger::after{
+  content: "Menu";
+}
+:root.active .sideMenu .menuTrigger::after{
+  content: "Close";
+}
+/*activeクラスが付与されると線が回転して×に*/
+:root.active .sideMenu .menuTrigger span:nth-of-type(1) {
+  transform: translateY(0.9em) rotate(-340deg);
+}
+:root.active .sideMenu .menuTrigger span:nth-of-type(2) {
+  opacity: 0;
+}
+:root.active .sideMenu .menuTrigger span:nth-of-type(3) {
+  transform: translateY(-0.9em) rotate(340deg);
+}
+
+
+
