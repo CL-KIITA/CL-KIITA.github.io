@@ -802,3 +802,37 @@ table.staffClass td:not([colspan]) {
   display: none !important;
   width: 0 !important;
 }
+
+.main .mainScr .content.cs404 {
+  background-image: url(./../assets/images/babel8_trans.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 79vh;
+  padding: 1.5em;
+  margin: 0.5em;
+  margin-top: 0;
+  border: none;
+}
+.main .mainScr .content.cs404 .httpStatus {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2em;
+}
+.main .mainScr .content.cs404 .httpStatus .httpStatusCode {
+  font-size: 3em;
+}
+.main .mainScr .content.cs404 .httpStatus .httpStatusDesc {
+}
+.main .mainScr .content.cs404 .notification {
+  font-size: 1.4em;
+  clear: left;
+}
+.main .mainScr .content.cs404 .httpStatus .migdalImg {
+  width: 20vw;
+  float: left;
+}
+.main .mainScr .content.cs404 .httpStatus .migdalImg img {
+  width: 100%;
+  object-fit: contain;
+}
