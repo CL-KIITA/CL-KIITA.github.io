@@ -29,6 +29,7 @@
   );
   --claret: #941f57;
   --light-cream: #fffae0;
+  --sepia2: #876917;
   --cherry-leaf-pickled: var(--harizuri);
   --cherry-leaf: var(--wakakusa);
   --grad-1: linear-gradient(
@@ -814,25 +815,86 @@ table.staffClass td:not([colspan]) {
   margin-top: 0;
   border: none;
 }
+.main .mainScr .content.cs404 .topLabel {
+  position: relative;
+  top: -2em;
+  margin-top: 0;
+}
 .main .mainScr .content.cs404 .httpStatus {
+  position: relative;
+  top: -0.3em;
   margin: 0 auto;
   text-align: center;
   font-size: 2em;
+  color: var(--claret);
 }
 .main .mainScr .content.cs404 .httpStatus .httpStatusCode {
   font-size: 3em;
 }
 .main .mainScr .content.cs404 .httpStatus .httpStatusDesc {
+  color: var(--green-green);
 }
 .main .mainScr .content.cs404 .notification {
+  margin-top: 0;
+  color: var(--claret);
   font-size: 1.4em;
   clear: left;
+  margin-bottom: 1em;
+  position: relative;
+  top: -2em;
 }
+.main .mainScr .content.cs404 .polyGlossia {
+  position: relative;
+  top: -2em;
+  padding: 1.5em;
+  padding-top: 0.4em;
+  padding-top: 0.4em;
+}
+.main .mainScr .content.cs404 .polyGlossia span {
+  position: relative;
+  color: var(--sepia2);
+  font-size: 2em;
+}
+.main .mainScr .content.cs404 .polyGlossia span.linepar {
+  left: -1em;
+}
+.main .mainScr .content.cs404 .polyGlossia span.ffeznee {
+  left: 7.5em;
+}
+.main .mainScr .content.cs404 .polyGlossia span.qilxal {
+  left: 11.5em;
+}
+.main .mainScr .content.cs404 .polyGlossia span.iunglo {
+  left: 0.5em;
+}
+
 .main .mainScr .content.cs404 .httpStatus .migdalImg {
-  width: 20vw;
+  width: 12em;
+  position: relative;
+  top: -1.2em;
   float: left;
+  animation: float 3s infinite ease-in-out alternate;
+  margin: 1em auto;
+  margin-bottom: 0;
+}
+.main .mainScr .content.cs404 .httpStatus .migdalImg span {
+  color: transparent;
+  display: inline-block;
+  position: relative;
+  top: -1em;
+}
+.main .mainScr .content.cs404 .httpStatus .migdalImg:hover span {
+  color: var(--green-green);
 }
 .main .mainScr .content.cs404 .httpStatus .migdalImg img {
   width: 100%;
   object-fit: contain;
+}
+@keyframes float {
+  0% {
+    transform: translateY(-0.7em);
+  }
+  100% {
+    transform: translateY(0.7em);
+  }
 }
