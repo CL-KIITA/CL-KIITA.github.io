@@ -849,6 +849,9 @@ table.staffClass td:not([colspan]) {
   padding: 1.5em;
   padding-top: 0.4em;
   padding-top: 0.4em;
+  max-height: 12.5em;
+  overflow-y: auto;
+  overflow-x: visible;
 }
 .main .mainScr .content.cs404 .polyGlossia span {
   position: relative;
@@ -856,16 +859,25 @@ table.staffClass td:not([colspan]) {
   font-size: 2em;
 }
 .main .mainScr .content.cs404 .polyGlossia span.linepar {
-  left: -1em;
+  left: 0.5em;
 }
 .main .mainScr .content.cs404 .polyGlossia span.ffeznee {
   left: 7.5em;
 }
+.main .mainScr .content.cs404 .polyGlossia span.maqen {
+  left: 3.1em;
+}
 .main .mainScr .content.cs404 .polyGlossia span.qilxal {
-  left: 11.5em;
+  left: 3.5em;
 }
 .main .mainScr .content.cs404 .polyGlossia span.iunglo {
-  left: 0.5em;
+  left: 5.4em;
+}
+.main .mainScr .content.cs404 .polyGlossia span.logiban {
+  left: 1.9em;
+}
+.main .mainScr .content.cs404 .polyGlossia span.tokipona {
+  left: 5.5em;
 }
 
 .main .mainScr .content.cs404 .httpStatus .migdalImg {
