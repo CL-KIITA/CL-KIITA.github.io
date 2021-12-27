@@ -849,7 +849,7 @@ table.staffClass td:not([colspan]) {
   padding: 1.5em;
   padding-top: 0.4em;
   padding-top: 0.4em;
-  max-height: 12.5em;
+  height: 12.5em;
   overflow-y: auto;
   overflow-x: visible;
 }
