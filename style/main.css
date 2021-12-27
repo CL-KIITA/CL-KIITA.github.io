@@ -836,16 +836,18 @@ table.staffClass td:not([colspan]) {
 }
 .main .mainScr .content.cs404 .notification {
   margin-top: 0;
+  width: 100%;
   color: var(--claret);
   font-size: 1.4em;
   clear: left;
   margin-bottom: 1em;
+  margin-right: 0;
   position: relative;
   top: -2em;
 }
 .main .mainScr .content.cs404 .polyGlossia {
   position: relative;
-  top: -2em;
+  top: -4em;
   padding: 1.5em;
   padding-top: 0.4em;
   padding-top: 0.4em;
