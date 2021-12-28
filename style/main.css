@@ -875,6 +875,9 @@ table.staffClass td:not([colspan]) {
 .main .mainScr .content.cs404 .polyGlossia span.iunglo {
   left: 5.4em;
 }
+.main .mainScr .content.cs404 .polyGlossia span.hunese {
+  left: 4.2em;
+}
 .main .mainScr .content.cs404 .polyGlossia span.logiban {
   left: 1.9em;
 }
