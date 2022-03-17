@@ -1,0 +1,18 @@
+@font-face {
+  font-family: UniHentaiKana;
+  src: url("./../../assets/fonts/UniHentaiKana-Regular.otf") format("otf");
+}
+title,
+body {
+  font-family: serif, UniHentaiKana;
+}
+.word {
+  font-size: 4rem;
+  font-weight: 800;
+}
+.wordWrap {
+  margin: 1.5rem;
+  padding: 1.5rem;
+  border: 0.1rem solid black;
+  width: 5rem;
+}
