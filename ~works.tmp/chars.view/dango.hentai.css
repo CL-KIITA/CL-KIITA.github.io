@@ -2,7 +2,6 @@
   font-family: UniHentaiKana;
   src: url("./../../assets/fonts/UniHentaiKana-Regular.otf") format("otf");
 }
-title,
 body {
   font-family: serif, UniHentaiKana;
 }
